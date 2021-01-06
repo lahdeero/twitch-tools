@@ -3,3 +3,4 @@ backup
 logs
 tmplogs
 node_modules
+tokens.json

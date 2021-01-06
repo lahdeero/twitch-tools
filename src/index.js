@@ -3,7 +3,7 @@ import { StaticAuthProvider } from "twitch-auth"
 import { ChatClient } from "twitch-chat-client"
 import dotenv from "dotenv"
 import moment from "moment"
-import { getAccessToken } from "./authorization_helper.js"
+import { getAuthProvider } from "./authorization_helper.js"
 import { getStreamerData } from "./command_service.js"
 import { writeToFile } from "./file_writer.js"
 dotenv.config()
@@ -11,7 +11,8 @@ dotenv.config()
 const main = async (channels) => {
 	console.log("channels", channels)
 	try {
-		const auth = new StaticAuthProvider(process.env.CLIENT_ID, process.env.ACCESS_TOKEN)
+		// const auth = new StaticAuthProvider(process.env.CLIENT_ID, process.env.ACCESS_TOKEN)
+		const auth = await getAuthProvider()  
 		const chatClient = new ChatClient(auth, { channels: channels })
 		await chatClient.connect()
 		console.log("nick:", chatClient.currentNick)
@@ -37,4 +38,6 @@ if (args.length >= 2) {
 } else {
 	console.error("not enough parameters")
 }
+
+// console.log("end")
 
