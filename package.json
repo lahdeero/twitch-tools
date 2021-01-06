@@ -1,0 +1,21 @@
+{
+  "name": "twitch-sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-modules ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^8.2.0",
+    "moment": "^2.29.1",
+    "twitch": "^4.3.8",
+    "twitch-auth": "^4.3.8",
+    "twitch-chat-client": "^4.3.8"
+  }
+}

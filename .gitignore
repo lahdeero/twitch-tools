@@ -1,0 +1,5 @@
+backup
+.env
+logs
+tmplogs
+node_modules
