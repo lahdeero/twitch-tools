@@ -1,4 +1,4 @@
-
+# Twitch tools
 
 ## Installation
 
@@ -15,6 +15,10 @@ REDIRECT_URL=
 https://id.twitch.tv/oauth2/authorize?client_id=<client_id>&redirect_uri=<OAuth Redirect URLs>&response_type=token&scope=chat:read+chat:edit
 
 3. Copy access token from url bar
+
+4. npm install
+
+5. mkdir logs
 
 ## Usage
 
