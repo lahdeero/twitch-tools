@@ -10,14 +10,12 @@ ACCESS_TOKEN=
 REDIRECT_URL=
 ```
 
-  a. Go to https://dev.twitch.tv/console and register app. After that get Client ID and Client Secret. Also enter redirect url, for example http://localhost
+  1a. Go to https://dev.twitch.tv/console and register app. After that get Client ID and Client Secret. Also enter redirect url, for example http://localhost
 
-  b. Go with the browser:
+  1b. Go with the browser:
 https://id.twitch.tv/oauth2/authorize?client_id=<client_id>&redirect_uri=<OAuth Redirect URLs>&response_type=token&scope=chat:read+chat:edit
 
-  c. Copy access token from url bar
-
-  d. npm install
+  1c. Copy access token from url bar
 
 2. Fill tokens.json
 ```
@@ -28,7 +26,7 @@ https://id.twitch.tv/oauth2/authorize?client_id=<client_id>&redirect_uri=<OAuth 
 }
 ```
 
-  a. Get code
+  2a. Get code
 
 ```
 GET
@@ -36,7 +34,7 @@ https://id.twitch.tv/oauth2/token?client_id=oihypfht1uzrbwmt0lnp5lhr9dktn1&clien
 
 ```
 
-  b. Get resfresh token by post request (use [postman](https://www.postman.com/) for example)
+  2b. Get resfresh token by post request (use [postman](https://www.postman.com/) for example)
 
 ```
 POST
