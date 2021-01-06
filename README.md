@@ -6,7 +6,7 @@ Fill .env
 ```
 CLIENT_ID=
 ACCESS_TOKEN=
-APPLICATION_URL=
+REDIRECT_URL=
 ```
 
 1. Go to https://dev.twitch.tv/console and register app and get Client ID, normal redirect url is http://localhost

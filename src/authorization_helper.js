@@ -8,7 +8,7 @@ const grant_types = ["client_credentials", "authorization_code"]
 export const getAccessToken = () => {
 	return axios({
 		method: "get",
-		url: `https://id.twitch.tv/oauth2/token?client_id=${process.env.CLIENT_ID}&client_secret=${process.env.SECRET}&code=${process.env.CODE}&grant_type=${grant_types[1]}&scope=${scopes}&redirect_uri=${process.env.APPLICATION_URL}`
+		url: `https://id.twitch.tv/oauth2/token?client_id=${process.env.CLIENT_ID}&client_secret=${process.env.SECRET}&code=${process.env.CODE}&grant_type=${grant_types[1]}&scope=${scopes}&redirect_uri=${process.env.REDIRECT_URL}`
 	})
 }
 
