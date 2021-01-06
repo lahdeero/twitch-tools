@@ -20,12 +20,13 @@ https://id.twitch.tv/oauth2/authorize?client_id=<client_id>&redirect_uri=<OAuth 
   d. npm install
 
 2. Fill tokens.json
-
+```
 {
     "accessToken": "",
     "refreshToken": "",
-    "expiryTimestamp": 1609966292258
+    "expiryTimestamp": 0
 }
+```
 
   a. Get code
 
